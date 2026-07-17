@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+#main{
+    display: flex;
+}
+#mLogo{
+    display: flex;
+    justify-content: space-between;
+}
+#logoT{
+    margin-top: 20px;
+    font-size: 2.2rem;
+    margin-right: 70px;
+    color: white;
+}
+#logo{
+    height: 6rem;
+    width: 7rem;
+    margin-left: 15px;
+    margin-top: 9px;
+}
+#logo img{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+}
+#sidebar{
+    width: 25vw;
+    height: 100vh;
+    background-color: #062A22;
+}
+#options{
+    margin-top: 40px;
+    width: 100%;
+    height: 73%;
+    color: white;
+}
+#options div{
+    width: 92%;
+    height: 13%;
+    border-radius: 15px;
+    text-align: start;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    &:hover{
+        box-shadow:0px 0px 2px #11633e;
+        background-color: #11633e95;
+        color: rgb(10, 200, 10);
+    }
+    &:active{
+        box-shadow:2px 2px 8px #11633e;
+    }
+}
+#tgln{
+    color: white;
+    position: relative;
+    left: 100px;
+    bottom: 10px;
+}
+#dash{
+    background-color: rgba(170, 167, 167, 0.132);
+    width: 75vw;
+    height: 100vh;
+}
+#header{
+    margin: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#cHolder{
+    display: flex;
+    width: 100%;
+    height: 17%;
+    justify-content: space-evenly;
+    margin: 60px 0;
+}
+.card{
+    width:25%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 2px black;
+    &:hover{
+     box-shadow: 1px 1px 4px black;
+    }
+}
+.card .lg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+#recent h3{
+    margin: 100px;
+    font-weight:500 ;
+}
+.head{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.value{
+    font-size: 2rem;
+    position: relative;
+    left: 100px;
+    bottom: 57px;
+}
+#balance{
+    background-color:#DCFCE7;
+    
+}
+#lg1{
+    background-color: #15803c68;
+}
+#lg1 span{
+    color: green;
+}
+#income{
+    background-color: rgba(171, 212, 239, 0.842);
+}
+#lg2{
+    background-color: rgba(131, 186, 223, 0.929);
+}
+#lg2 span{
+    color:blue ;
+}
+#expense{
+    background-color: #FEE2E2;
+}
+#lg3{
+    background-color:#e5b7b7 ;
+}
+#lg3 span{
+    color: darkred;
+}
+#lg4{
+    background-color: rgba(255, 166, 0, 0.447);
+}
+#lg4 span{
+    color: orangered;
+}
+#tHolder{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-evenly;
+}
+#Rcont{
+    position: fixed;
+    width: 70%;
+    height: 700px;
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 2px black;
+    background-color: rgba(171, 212, 239, 0.124);
+    position: fixed;
+    top: 90px;
+    left: 430px;
+    &:hover{
+     box-shadow: 1px 1px 4px black;
+    }
+}
+#Rcholder{
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+}
+#Rincome,#Rbalance,#Rcount,#Rexpense{
+    width: 500px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+#addd{
+    width:40%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 2px black;
+    background-color: rgba(171, 212, 239, 0.124);
+    &:hover{
+     box-shadow: 1px 1px 4px black;
+    }
+
+}
+#recent{
+    width:50%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 2px black;
+    background-color: rgba(171, 212, 239, 0.124);
+    &:hover{
+     box-shadow: 1px 1px 4px black;
+    }
+}
+.frm{
+    margin: 10px;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+.frm input{
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 6px;
+    border: 0px;
+    box-shadow: 0 0 2px black;
+    background-color: rgba(207, 204, 204, 0.039);
+}
+.frm select{
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 6px;
+    border: 0px;
+    box-shadow: 0 0 2px black;
+    background-color: rgba(207, 204, 204, 0.039);
+}
+#tType{
+    margin: 20px;
+}
+#tType label{
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+#tType input{
+    margin-right: 30px;
+    cursor: pointer;
+}
+#bn{
+    width: 90%;
+    height: 50px;
+    background-color: #11633e;
+    border-radius: 10px;
+    color: white;
+    margin: 0 auto;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+     &:hover{
+        box-shadow:0px 0px 2px #11633e;
+        color:rgb(10, 200, 10) ;
+    }
+    &:active{
+        box-shadow:2px 2px 6px #11633e;
+    }
+}
+.about{/*For about section*/
+    width: 70%;
+    min-height: 300px;
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 2px black;
+    background-color: rgba(171, 212, 239, 0.124);
+    position: fixed;
+    top: 90px;
+    left: 430px;
+    &:hover{
+     box-shadow: 1px 1px 4px black;
+    }
+}
+.none{ /*To Remove */
+    display: none !important;
+}
+.scale{/* For Transactions*/
+    transform: scale(1.2);
+    width:600px !important;
+    height:500px !important;
+    position: relative;
+    bottom: 100px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 2px solid black;
+}
+.inner{/*For inner div*/
+    width:95%;
+    margin: 10px;
+    height: 60px;
+    border-radius: 10px;
+    border-bottom:0.8px solid black ;
+    background-color: rgba(171, 212, 239, 0.124);
+    display: grid;
+    grid-template-rows:repeat(2,1fr);
+    grid-template-columns:repeat(3,1fr);
+    &:hover{
+     box-shadow: 0px 0px 2px black;
+    }
+}
+.delete{
+    height: 25px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: #e5b7b7;
+    color: darkred;
+    cursor: pointer;
+}
+.green{
+    background-color: rgb(63, 151, 63);
+    color: #98ee9f;
+}
+.Sbar{/*Sidebar*/
+    background-color: #020617!important;
+}
+.Dsh{/*Dashboard*/
+    background-color: #111827!important;
+}
+.crd{/*all cards*/
+    background-color: #1E293B!important;
+    color: white;
+}
+.bnt{/*buttons*/
+    background-color: rgb(46, 46, 238) !important;
+}
+.sett{
+    position: fixed;
+    width: 70%;
+    min-height: 300px;
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 2px black;
+    background-color: rgba(171, 212, 239, 0.124);
+    top: 90px;
+    left: 430px;
+    &:hover{
+     box-shadow: 1px 1px 4px black;
+    }
+}
+.icn{
+    width: 98%;
+    margin: 20px auto;
+    height: 40px;
+    box-shadow: 0 0 2px black;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 0 4px black;
+    }
+    &:active{
+        box-shadow: 0 0 6px black;
+    }
+}
+.clbg{
+    box-shadow:0px 0px 4px #11633e;
+        background-color: #11633e95;
+        color: rgb(10, 200, 10);
+}
